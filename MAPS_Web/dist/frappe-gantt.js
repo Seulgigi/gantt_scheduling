@@ -802,7 +802,7 @@ var Gantt = (function () {
                 this.update_arrow_position();
             }
 
-            if (y) {
+            if (y && !overlap) {
                 this.update_attr(bar, 'y', y)
                 this.update_progressbar_position();
                 // add label position
